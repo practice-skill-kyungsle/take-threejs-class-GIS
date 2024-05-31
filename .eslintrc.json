@@ -9,18 +9,10 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": [
-    "mdcs",
-    "plugin:compat/recommended"
-  ],
-  "plugins": [
-    "html",
-    "import"
-  ],
+  "extends": ["mdcs", "plugin:compat/recommended", "prettier"],
+  "plugins": ["html", "import", "prettier"],
   "settings": {
-    "polyfills": [
-      "WebGL2RenderingContext"
-    ]
+    "polyfills": ["WebGL2RenderingContext"]
   },
   "globals": {
     "__THREE_DEVTOOLS__": "readonly",
@@ -44,13 +36,8 @@
     "VideoFrame": "readonly"
   },
   "rules": {
-    "no-throw-literal": [
-      "error"
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "no-throw-literal": ["error"],
+    "quotes": ["error", "single"],
     "prefer-const": [
       "error",
       {
